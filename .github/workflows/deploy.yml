@@ -18,7 +18,7 @@ jobs:
       - name: 빌드하기
         run: npm run build
 
-      - name: AWS Resourse에 접근할 수 있게 AWS 인증 설정
+      - name: AWS Resourse에 접근할 수 있게 AWS 인증 설정(재시도)
         uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-region: ap-northest-2
